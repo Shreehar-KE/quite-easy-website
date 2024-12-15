@@ -62,6 +62,21 @@ a {
 }
 /* NAVBAR END */
 
+/* FOOTER START */
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    font-size: 14px;
+  }
+
+  .socialLinks {
+    display: flex;
+    gap: 10px;
+  }
+/* FOOTER END */
+
 @media (max-width: 1536px) {
 }
 
