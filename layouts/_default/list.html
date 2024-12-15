@@ -12,9 +12,9 @@
           <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
         </div>
         <div class="listItemCategories">
-          <a href="" class="listItemCategory">top10</a>
-          <a href="" class="listItemCategory">tech</a>
-          <a href="" class="listItemCategory">2024</a>
+          {{ range (.GetTerms "categories") }}
+          <a class="listItemCategory" href={{ .Permalink }}>{{ .Name }}</a>
+          {{ end }}
         </div>
       </div>
     </div>
